@@ -38,9 +38,7 @@ namespace RabbitClients
         }
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            //Application.Exit();
-            //Application.ExitThread();
+        {            
             System.Environment.Exit(0);
         }
 
@@ -180,9 +178,6 @@ namespace RabbitClients
             //channel.BasicConsume(QueueName, noAck: true, consumer: consumer);
             //var msgResponse = consumer2.Queue.Dequeue(); //blocking
             //var msgBody2 = Encoding.UTF8.GetString(msgResponse.Body);
-
-
-
         }
 
         private void LoopGetMessage(ConnectionFactory factory, string exchangeName, string queueName, string routtingKey)
@@ -212,6 +207,12 @@ namespace RabbitClients
                     System.Threading.Thread.Sleep(TimeSpan.FromSeconds(1));
                 }
             });
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmDlx frm = new FrmDlx();
+            frm.ShowDialog();
         }
     }
 

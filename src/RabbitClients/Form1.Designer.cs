@@ -36,6 +36,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.Btn_Clear = new System.Windows.Forms.Button();
             this.Btn_Stop = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Rtx_SendContext
@@ -49,7 +50,7 @@
             // 
             // Btn_Begin
             // 
-            this.Btn_Begin.Location = new System.Drawing.Point(731, 57);
+            this.Btn_Begin.Location = new System.Drawing.Point(650, 57);
             this.Btn_Begin.Name = "Btn_Begin";
             this.Btn_Begin.Size = new System.Drawing.Size(75, 23);
             this.Btn_Begin.TabIndex = 3;
@@ -90,7 +91,7 @@
             // 
             // Btn_Clear
             // 
-            this.Btn_Clear.Location = new System.Drawing.Point(926, 57);
+            this.Btn_Clear.Location = new System.Drawing.Point(845, 57);
             this.Btn_Clear.Name = "Btn_Clear";
             this.Btn_Clear.Size = new System.Drawing.Size(75, 23);
             this.Btn_Clear.TabIndex = 8;
@@ -99,18 +100,29 @@
             // 
             // Btn_Stop
             // 
-            this.Btn_Stop.Location = new System.Drawing.Point(831, 57);
+            this.Btn_Stop.Location = new System.Drawing.Point(750, 57);
             this.Btn_Stop.Name = "Btn_Stop";
             this.Btn_Stop.Size = new System.Drawing.Size(75, 23);
             this.Btn_Stop.TabIndex = 9;
             this.Btn_Stop.Text = "停止消费";
             this.Btn_Stop.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(951, 57);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "死信监听";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1066, 566);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.Btn_Stop);
             this.Controls.Add(this.Btn_Clear);
             this.Controls.Add(this.Txt_KeyNoReturn);
@@ -137,6 +149,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button Btn_Clear;
         private System.Windows.Forms.Button Btn_Stop;
+        private System.Windows.Forms.Button button1;
     }
 }
 

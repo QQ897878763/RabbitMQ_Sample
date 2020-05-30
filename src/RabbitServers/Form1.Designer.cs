@@ -49,6 +49,7 @@
             this.Txt_QueueName = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.Chk_IsEnableIni = new System.Windows.Forms.CheckBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Btn_Send
@@ -225,11 +226,22 @@
             this.Chk_IsEnableIni.Text = "使用配置文件参数";
             this.Chk_IsEnableIni.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(796, 44);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(88, 23);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "死信测试";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1012, 622);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.Chk_IsEnableIni);
             this.Controls.Add(this.Txt_QueueName);
             this.Controls.Add(this.label9);
@@ -282,6 +294,7 @@
         private System.Windows.Forms.TextBox Txt_QueueName;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.CheckBox Chk_IsEnableIni;
+        private System.Windows.Forms.Button button1;
     }
 }
 
